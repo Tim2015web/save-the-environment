@@ -25,7 +25,7 @@ ul {
   margin: 0;
 }
 
-.home-heading {
+.homeHeading {
   margin: 0;
   font-size: 64px;
   font-weight: 700;
@@ -90,7 +90,7 @@ p {
   color: var(--Secondary-text);
 }
 
-.paragraph-small {
+.paragraphSmall {
   font-size: 14px;
 }
 
@@ -108,34 +108,19 @@ button {
   backdrop-filter: blur(40px);
 }
 
-.button-primary {
-  height: 51px;
-  padding: 14px 30px;
+.buttonPrimary {
+  padding: 16px 32px;
   color: #FFF;
   background-color: var(--Green-primary);
   cursor: pointer;
 }
 
-.button-secondary {
-  height: 51px;
-  padding: 14px 30px;
+.buttonSecondary {
+  padding: 16px 32px;
   color: var(--Primary-text);
   background-color: #FFF;
   cursor: pointer;
 }
-
-.navbar-primary {
-  height: 43px;
-  padding: 10px 30px;
-  color: #FFF;
-  background-color: var(--Primary-text);
-  cursor: pointer;
-}
-
-.navbar-primary:hover {
-  box-shadow: 0 .5em 1em 0 rgba(0, 0, 0, 0.15), 0 .4em .5em -.4em rgba(0, 0, 0, 0.4);
-}
-
 
 .container {
   max-width: 1280px;

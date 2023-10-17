@@ -7,13 +7,14 @@ import { Media } from './pages/Media';
 import { ContactUs } from './pages/ContactUs';
 
 import { Route, Routes } from 'react-router-dom';
-import { Navbar } from './components/navbar';
+import { Header } from './components/header';
 import { Footer } from './components/footer';
+import { Donation } from './pages/AboutUs copy';
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Header />
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,11 +22,13 @@ function App() {
         <Route path="/what-we-do" element={<WhatWeDo />} />
         <Route path="/media" element={<Media />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/donation" element={<Donation />} />
       </Routes>
 
       <Footer />
     </>
   );
 }
+
 
 export default App;

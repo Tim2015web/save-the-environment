@@ -4,6 +4,7 @@
   position: relative;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 .logotype {
@@ -45,9 +46,25 @@
   cursor: pointer;
 }
 
-.topBSutton {
-  font-size: 50px;
-  cursor: pointer;
+.menu button {
+  position: relative;
+}
+
+.btnLink {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  padding: 12px 32px;
+  border-radius: 4px;
+  backdrop-filter: blur(40px);
+  background-color: var(--Primary-text);
+  text-decoration: none;
+}
+
+.btnLink:hover {
+  box-shadow: 0 .5em 1em 0 rgba(0, 0, 0, 0.15), 0 .4em .5em -.4em rgba(0, 0, 0, 0.4);
+  text-decoration: underline;
 }
 
 @media (max-width: 800px) {

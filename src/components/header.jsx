@@ -1,22 +1,39 @@
-import { NavLink } from 'react-router-dom';
-import styles from './navbar.module.css';
-
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import styles from './header.module.css';
+import { NavLink, useLocation } from 'react-router-dom';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'; // Иконки
 import { useState } from 'react';
 
 const setActive = Navbar => Navbar.isActive ? styles.active : styles.item;
 
-export function Navbar() {
+export function Header() {
 
   const [nav, setNav] = useState(false);
 
+  // Цвет фона Header
+  const currentPath = useLocation().pathname;
+  let backgroundColor = '';
+  switch (currentPath) {
+    case '/media':
+      backgroundColor = '#EFF7F2';
+      break;
+    case '/contact':
+      backgroundColor = '#EBF0F9';
+      break;
+    case '/Donation':
+      backgroundColor = '#EFF7F2';
+      break;
+    default:
+      backgroundColor = '#ffffff';
+      break;
+  }
+
   return (
-    <nav>
+    <div className={styles.header} style={{ backgroundColor: backgroundColor }}>
       <div className='container'>
         <div className={styles.wrapper}>
 
           <div className={styles.logotype}>
-            <NavLink to="/">
+            <NavLink to="/" onClick={() => setNav(false)}>
               <svg width="130" height="27" viewBox="0 0 130 27" fill="#111111" xmlns="http://www.w3.org/2000/svg">
                 <g>
                   <path d="M129.77 20.1089V23.326H127.071C124.191 23.2355 122.653 21.6804 122.653 18.7595V11.4121H120.769V8.58991H122.653V5.43042H126.635V8.557H129.679V11.3709H126.635V18.3646C126.635 19.3108 126.824 20.0678 128.281 20.0678L129.77 20.1089Z" />
@@ -33,7 +50,7 @@ export function Navbar() {
             </NavLink>
           </div>
 
-          <div className={nav ? [styles.navWrapper, styles.navWrapperActive].join(' ') : [styles.navWrapper]}>
+          <nav className={nav ? [styles.navWrapper, styles.navWrapperActive].join(' ') : [styles.navWrapper]}>
 
             <ul className={styles.menu}>
               <li className={styles.item}><NavLink onClick={() => setNav(false)} to="/" className={setActive}>Home</NavLink></li>
@@ -43,9 +60,9 @@ export function Navbar() {
               <li className={styles.item}><NavLink onClick={() => setNav(false)} to="/contact" className={setActive}>Contact</NavLink></li>
             </ul>
 
-            <button className='navbar-primary'>Donate</button>
+            <NavLink onClick={() => setNav(false)} to="/Donation" className={styles.btnLink}>Donate</NavLink>
 
-          </div>
+          </nav>
 
           <div onClick={() => setNav(!nav)} className={styles.burger}>
             {nav ? <AiOutlineClose size={32} /> : <AiOutlineMenu size={32} />}
@@ -53,6 +70,6 @@ export function Navbar() {
 
         </div>
       </div>
-    </nav>
+    </div>
   );
 }
