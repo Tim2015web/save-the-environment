@@ -60,7 +60,7 @@ export function Header() {
               <li className={styles.item}><NavLink onClick={() => setNav(false)} to="/contact" className={setActive}>Contact</NavLink></li>
             </ul>
 
-            <NavLink onClick={() => setNav(false)} to="/Donation" className={styles.btnLink}>Donate</NavLink>
+            <NavLink onClick={() => setNav(false)} to="/donation" className={styles.btnLink}>Donate</NavLink>
 
           </nav>
 

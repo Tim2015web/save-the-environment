@@ -1,3 +1,7 @@
+.header {
+  user-select: none;
+}
+
 .wrapper {
   min-height: 67px;
   display: flex;

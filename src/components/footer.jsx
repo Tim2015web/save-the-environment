@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import styles from './footer.module.css';
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 export function Footer() {
@@ -57,10 +57,10 @@ export function Footer() {
 
             <ul>
               <li>Our team</li>
-              <li><a href="/">About us</a></li>
+              <li><NavLink to="/about-us">About us</NavLink></li>
               <li><a href="/">Team</a></li>
-              <li><a href="/">What we do</a></li>
-              <li><a href="/">Contact</a></li>
+              <li><NavLink to="/what-we-do">What we do</NavLink></li>
+              <li><NavLink to="/contact">Contact</NavLink></li>
             </ul>
 
             <ul>
