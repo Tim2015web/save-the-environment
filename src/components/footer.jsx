@@ -86,8 +86,8 @@ export function Footer() {
             <div className="">
               <input
                 type="text"
-                id="email"
-                name="email"
+                id="emailSubscribe"
+                name="emailSubscribe"
                 value={email}
                 onChange={handleEmailChange}
                 placeholder="Your email"

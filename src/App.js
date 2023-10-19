@@ -9,7 +9,7 @@ import { ContactUs } from './pages/ContactUs';
 import { Route, Routes } from 'react-router-dom';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
-import { Donation } from './pages/AboutUs copy';
+import { Donation } from './pages/Donation';
 
 function App() {
   return (
@@ -29,6 +29,5 @@ function App() {
     </>
   );
 }
-
 
 export default App;

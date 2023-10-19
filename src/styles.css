@@ -19,7 +19,7 @@ body {
   line-height: normal;
 }
 
-body.modal-open {
+.no-scroll {
   overflow: hidden;
 }
 

@@ -1,9 +1,9 @@
+import { NavLink } from 'react-router-dom';
 import styles from './hero.module.css';
 import iconPlay from '../assets/icon_play.svg';
-import { NavLink } from 'react-router-dom';
 
-import React, { useState, useRef } from 'react';
-import Modal from '../components/modal';
+import { useState } from 'react'; // Импортируйте useState
+import Modal from './videoModal';
 
 // Статистические данные hero
 const treesPlanted = 23800;
@@ -16,22 +16,19 @@ function formatNumberWithCommas(number) {
 
 export function Hero() {
 
-  // Модальное окно
   const [showModal, setShowModal] = useState(false);
-  const [modalMessage, setModalMessage] = useState('');
+  const [videoUrl, setVideoUrl] = useState(''); // Создайте состояние для URL видео
 
-  const openModal = (message) => {
-    setModalMessage(message);
+  const handleVideoClick = (url) => {
+    setVideoUrl(url); // Устанавливайте URL видео при клике
     setShowModal(true);
-    document.body.classList.add('modal-open'); // Добавляем класс для блокировки прокрутки
-  }
+    document.documentElement.classList.add('no-scroll');
+  };
 
   const closeModal = () => {
     setShowModal(false);
-    document.body.classList.remove('modal-open'); // Удаляем класс для разблокировки прокрутки
+    document.documentElement.classList.remove('no-scroll');
   }
-
-  const modalRef = useRef();
 
   return (
     <div className={styles.hero}>
@@ -42,11 +39,10 @@ export function Hero() {
 
           <div className={styles.btnRow}>
             <NavLink to="/what-we-do" className={styles.btnLink}>What we do</NavLink>
-            <button onClick={() => openModal("https://www.youtube.com/embed/LXb3EKWsInQ?si=ECVflyzfUqMPBnW9")}>
+            <button onClick={() => handleVideoClick("https://www.youtube.com/embed/LXb3EKWsInQ?si=ECVflyzfUqMPBnW9")}>
               <img src={iconPlay} alt="Icon play video" />
               Play Video
             </button>
-
           </div>
 
           <div className={styles.statistics}>
@@ -55,7 +51,8 @@ export function Hero() {
             <div>{formatNumberWithCommas(donationsCollected)} donations collected</div>
           </div>
 
-          {showModal && (<Modal message={modalMessage} onClose={closeModal} modalRef={modalRef} />)}
+          {showModal && (<Modal message={videoUrl} onClose={closeModal} />)}
+
         </div>
       </div>
     </div>

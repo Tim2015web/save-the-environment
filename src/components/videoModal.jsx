@@ -1,8 +1,11 @@
 import { AiOutlineClose } from 'react-icons/ai';
-import styles from './modal.module.css';
-import React, { useEffect } from 'react';
+import styles from './videoModal.module.css';
+import React, { useEffect, useRef } from 'react';
 
-function Modal({ message, onClose, modalRef }) {
+function Modal({ message, onClose }) {
+
+  const modalRef = useRef(); // Добавьте эту строку для создания ref
+
   useEffect(() => {
     function handleClickOutside(event) {
       if (modalRef.current && !modalRef.current.contains(event.target)) {

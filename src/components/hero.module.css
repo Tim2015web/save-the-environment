@@ -33,11 +33,13 @@
   border-radius: 4px;
   background: #ffffff;
   backdrop-filter: blur(40px);
+
+  transition: box-shadow 0.3s, transform 0.3s;
 }
 
 .btnLink:hover {
-  box-shadow: 0 .5em 1em 0 rgba(0, 0, 0, 0.15), 0 .4em .5em -.4em rgba(0, 0, 0, 0.4);
-  text-decoration: underline;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(2px, 2px);
 }
 
 .btnRow button {
@@ -53,6 +55,11 @@
   border: 0;
 
   cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.btnRow button:hover {
+  transform: translate(2px, 2px);
 }
 
 .btnRow img {
