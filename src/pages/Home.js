@@ -1,5 +1,6 @@
 import { Hero } from '../components/hero';
 import { KnowAboutUs } from '../components/knowAboutUs';
+import { WhatWeDo } from '../components/whatWeDo';
 
 import './home.css';
 
@@ -10,6 +11,7 @@ export function Home() {
 
       <Hero />
       <KnowAboutUs />
+      <WhatWeDo />
 
     </div>
   );
