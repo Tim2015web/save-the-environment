@@ -1,0 +1,82 @@
+.blogSection {}
+
+.header {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.header span {
+  color: var(--Primary-text, #1D2130);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.header hr {
+  width: 100%;
+  background-color: var(--Border, #E5E5E5);
+}
+
+.main {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card a {
+  display: block;
+  margin-top: 16px;
+
+  color: var(--Black, #1C1D28);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+  color: var(--Green-primary, #70C174);
+}
+
+.card p {
+  margin-top: 8px;
+
+  color: var(--Secondary-text, #525560);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@media (max-width: 1000px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .header span {
+    font-size: 36px;
+    white-space: unset;
+  }
+
+  .header hr {
+    display: none;
+  }
+
+  .main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

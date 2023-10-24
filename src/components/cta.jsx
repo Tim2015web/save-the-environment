@@ -8,13 +8,11 @@ export function Cta() {
   const [showJoinUsModal, setJoinUsModal] = useState(false);
 
   const openModal = () => {
-    console.log('Open');
     setJoinUsModal(true);
     document.documentElement.classList.add('no-scroll');
   };
 
   const closeModal = () => {
-    console.log('Close');
     setJoinUsModal(false);
     document.documentElement.classList.remove('no-scroll');
   }

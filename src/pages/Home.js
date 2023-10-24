@@ -1,3 +1,4 @@
+import { BlogSection } from '../components/blogSection';
 import { Cta } from '../components/cta';
 import { Hero } from '../components/hero';
 import { KnowAboutUs } from '../components/knowAboutUs';
@@ -18,6 +19,7 @@ export function Home() {
       <Projects />
       <Stats />
       <Cta />
+      <BlogSection />
 
       <div style={{ backgroundColor: 'brown' }}>.</div>
 
