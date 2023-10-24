@@ -1,5 +1,8 @@
+import { Cta } from '../components/cta';
 import { Hero } from '../components/hero';
 import { KnowAboutUs } from '../components/knowAboutUs';
+import { Projects } from '../components/projects';
+import { Stats } from '../components/stats';
 import { WhatWeDo } from '../components/whatWeDo';
 
 import './home.css';
@@ -12,6 +15,11 @@ export function Home() {
       <Hero />
       <KnowAboutUs />
       <WhatWeDo />
+      <Projects />
+      <Stats />
+      <Cta />
+
+      <div style={{ backgroundColor: 'brown' }}>.</div>
 
     </div>
   );

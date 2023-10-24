@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styles from './hero.module.css';
 import iconPlay from '../assets/icon_play.svg';
-
 import { useState } from 'react'; // Импортируйте useState
 import Modal from './videoModal';
 

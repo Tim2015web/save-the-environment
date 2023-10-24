@@ -113,7 +113,7 @@ button {
 }
 
 .buttonPrimary {
-  padding: 16px 32px;
+  padding: 14px 30px;
   color: #FFF;
   background-color: var(--Green-primary);
   cursor: pointer;

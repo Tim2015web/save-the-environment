@@ -24,7 +24,7 @@ function Modal({ message, onClose }) {
 
   return (
     <div className={styles.modal}>
-      <div className={styles.modalContent} ref={modalRef}>
+      <div className={styles.modalContent} ref={modalRef}>      
         <AiOutlineClose className={styles.close} size={32} onClick={onClose} />
         <iframe title="YouTube Video" src={message} frameBorder="0" allowFullScreen></iframe>
       </div>
