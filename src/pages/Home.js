@@ -1,18 +1,15 @@
-import { BlogSection } from '../components/blogSection';
-import { Cta } from '../components/cta';
 import { Hero } from '../components/hero';
 import { KnowAboutUs } from '../components/knowAboutUs';
+import { WhatWeDo } from '../components/whatWeDo';
 import { Projects } from '../components/projects';
 import { Stats } from '../components/stats';
-import { WhatWeDo } from '../components/whatWeDo';
-
-import './home.css';
+import { Cta } from '../components/cta';
+import { BlogSection } from '../components/blogSection';
+import { OurEvents } from '../components/ourEvents';
 
 export function Home() {
-
   return (
-    <div className='home'>
-
+    <>
       <Hero />
       <KnowAboutUs />
       <WhatWeDo />
@@ -20,9 +17,7 @@ export function Home() {
       <Stats />
       <Cta />
       <BlogSection />
-
-      <div style={{ backgroundColor: 'brown' }}>.</div>
-
-    </div>
+      <OurEvents />
+    </>
   );
 }

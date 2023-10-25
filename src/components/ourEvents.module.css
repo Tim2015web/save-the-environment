@@ -1,0 +1,157 @@
+.ourEvents {
+  padding: 98px 0 96px 0;
+}
+
+.header {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.header span {
+  color: var(--Primary-text, #1D2130);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.header hr {
+  width: 100%;
+  height: 1px;
+  background-color: var(--Border, #E5E5E5);
+  border: none;
+}
+
+.main {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  gap: 24px;
+  padding: 32px 48px 40px 40px;
+
+  border-radius: 8px;
+  background: var(--Green-secondary, #BEF3C0);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.dateWrap p:first-child {
+  color: var(--Primary-text, #1D2130);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 120%;
+  font-variant: small-caps;
+}
+
+.dateWrap p:last-child {
+  color: var(--Primary-text, #1D2130);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.eventWrap {
+  margin-top: 8px;
+}
+
+.eventWrap div {
+  display: inline-flex;
+  gap: 23px;
+}
+
+.eventWrap span {
+  color: var(--Primary-text, #1D2130);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.eventWrap hr {
+  width: 44px;
+  height: 2px;
+  background-color: var(--Primary-text, #1D2130);
+  border: none;
+}
+
+.eventWrap h3 {
+  margin-top: 8px;
+}
+
+.imgWrap {
+  display: flex;
+  margin-left: auto;
+  align-self: center;
+}
+
+.imgWrap img {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover .imgWrap img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1000px) {
+  .main {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header span {
+    font-size: 36px;
+    white-space: unset;
+  }
+
+  .header hr {
+    display: none;
+  }
+
+  .card {
+    flex-direction: column;
+    gap: 20px;
+    padding: 38px;
+  }
+
+  .eventWrap h3 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .imgWrap {
+    margin: 0 auto;
+  }
+
+  .dateWrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dateWrap p {
+    margin: 0 auto;
+  }
+
+}

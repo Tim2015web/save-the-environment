@@ -1,13 +1,30 @@
 import styles from './header.module.css';
 import { NavLink, useLocation } from 'react-router-dom';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'; // Иконки
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const setActive = Navbar => Navbar.isActive ? styles.active : styles.item;
 
 export function Header() {
 
   const [nav, setNav] = useState(false);
+
+  const openNav = () => {
+    setNav(true);
+    document.documentElement.classList.add('no-scroll'); // Запрет прокрутки
+  };
+
+  // Функция для закрытия бургер-меню
+  const closeNav = () => {
+    setNav(false);
+    document.documentElement.classList.remove('no-scroll'); // Разрешение прокрутки
+  };
+
+  useEffect(() => {
+    if (!nav) {
+      closeNav();
+    }
+  }, [nav]);
 
   // Цвет фона Header
   const currentPath = useLocation().pathname;
@@ -51,20 +68,18 @@ export function Header() {
           </div>
 
           <nav className={nav ? [styles.navWrapper, styles.navWrapperActive].join(' ') : [styles.navWrapper]}>
-
             <ul className={styles.menu}>
+
               <li className={styles.item}><NavLink onClick={() => setNav(false)} to="/" className={setActive}>Home</NavLink></li>
               <li className={styles.item}><NavLink onClick={() => setNav(false)} to="/about-us" className={setActive}>About us</NavLink></li>
               <li className={styles.item}><NavLink onClick={() => setNav(false)} to="/what-we-do" className={setActive}>What We Do</NavLink></li>
               <li className={styles.item}><NavLink onClick={() => setNav(false)} to="/media" className={setActive}>Media</NavLink></li>
               <li className={styles.item}><NavLink onClick={() => setNav(false)} to="/contact" className={setActive}>Contact</NavLink></li>
             </ul>
-
             <NavLink onClick={() => setNav(false)} to="/donation" className={styles.btnLink}>Donate</NavLink>
-
           </nav>
 
-          <div onClick={() => setNav(!nav)} className={styles.burger}>
+          <div onClick={nav ? closeNav : openNav} className={styles.burger}>
             {nav ? <AiOutlineClose size={32} /> : <AiOutlineMenu size={32} />}
           </div>
 
