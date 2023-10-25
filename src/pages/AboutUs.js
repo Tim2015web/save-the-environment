@@ -1,7 +1,9 @@
+import { AboutUsHero } from "../components/aboutUsHero";
+
 export function AboutUs() {
   return (
     <>
-      <h1>About us</h1>
+      <AboutUsHero />
 
       <div style={{ backgroundColor: 'brown' }}>.</div>
     </>
