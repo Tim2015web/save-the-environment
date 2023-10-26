@@ -1,0 +1,108 @@
+.ourJourneySection {}
+
+.wrapper {
+  border-radius: 12px;
+  background-color: var(--Black, #0B0706);
+
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0 64px 96px;
+  gap: 20px;
+}
+
+.textWrap {
+  max-width: 488px;
+  margin-top: 64px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.textWrap>span {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.textWrap h2 {
+  color: #ffffff;
+}
+
+.textWrap>p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+
+.statsWrap {
+  margin-top: 18px;
+  display: flex;
+  gap: 32px;
+  padding-top: 2px;
+}
+
+.stat {}
+
+.stat>span {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.stat>p {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+
+.imgWrap {
+  display: block;
+  max-width: 648px;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.imgWrap img {
+  display: block;
+  border-radius: 12px 0px 0px 12px;
+  width: 100%;
+
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .textWrap {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    padding: 32px 0 32px 20px;
+  }
+
+  .textWrap {
+    margin-top: 0;
+  }
+
+  .textWrap h2 {
+    font-size: 36px;
+  }
+
+  .statsWrap {
+    margin-top: 0;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,32 @@
+.awardsSection {
+  padding: 96px 0 95px 0;
+}
+
+.awardsSection h2 {
+  text-align: center;
+}
+
+.awardsWrap {
+  margin: 48px auto 0 auto;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+@media (max-width: 700px) {
+  .awardsWrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .awardsSection {
+    padding: 48px 0;
+  }
+
+  .awardsSection h2 {
+    font-size: 36px;
+  }
+}
