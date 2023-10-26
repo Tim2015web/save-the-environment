@@ -1,6 +1,10 @@
 import { AboutUsHero } from "../components/aboutUsHero";
 import { AwardsSection } from "../components/awardsSection/awardsSection";
 import { OurJourneySection } from "../components/ourJourneySection";
+import { OurTeamSection } from "../components/ourTeamSection/ourTeamSection";
+import { Cta } from '../components/cta';
+import { BlogSection } from "../components/blogSection";
+import { OurEvents } from "../components/ourEvents";
 
 export function AboutUs() {
   return (
@@ -8,8 +12,10 @@ export function AboutUs() {
       <AboutUsHero />
       <AwardsSection />
       <OurJourneySection />
-
-      <div style={{ backgroundColor: 'brown' }}>.</div>
+      <OurTeamSection />
+      <Cta />
+      <BlogSection />
+      <OurEvents />
     </>
   );
 }
