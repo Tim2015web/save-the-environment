@@ -1,0 +1,39 @@
+.blogPost {
+  display: flex;
+  gap: 0 24px;
+}
+
+.blogPost>div:last-child {
+  max-width: 296px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 8px 0;
+}
+
+.blogPost img {
+  max-width: 100%;
+  min-width: 100px;
+  display: block;
+}
+
+.blogPost span {
+  display: block;
+  color: var(--Primary-text, #1D2130);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+@media (max-width: 500px) {
+  .blogPost {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .blogPost span,
+  .blogPost p {
+    text-align: center;
+  }
+}

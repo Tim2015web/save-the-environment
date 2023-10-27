@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { ContactUsHero } from "../components/contactUsHero";
 
 export function ContactUs() {
 
@@ -6,7 +7,7 @@ export function ContactUs() {
 
   return (
     <>
-      <h1>Contact us</h1>
+      <ContactUsHero />
     </>
   );
 }

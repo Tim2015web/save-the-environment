@@ -1,4 +1,7 @@
 import { useEffect } from "react";
+import { MediaHero } from "../components/mediaHero/mediaHero";
+import { BlogSection } from '../components/blogSection';
+import { OurEvents } from '../components/ourEvents';
 
 export function Media() {
 
@@ -6,7 +9,11 @@ export function Media() {
 
   return (
     <>
-      <h1>Media</h1>
+      <MediaHero />
+      <div style={{ marginTop: '100px' }}>
+        <BlogSection />
+      </div>
+      <OurEvents />
     </>
   );
 }
