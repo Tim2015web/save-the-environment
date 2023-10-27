@@ -61,7 +61,6 @@ export function KnowAboutUs() {
           </div>
 
           <div className={styles.bottomRow}>
-
             <div className="">
               <span>our Supporters</span>
               <hr />
@@ -72,7 +71,6 @@ export function KnowAboutUs() {
                 <img key={index} src={logo} alt="Company logotype" />
               ))}
             </div>
-
           </div>
 
           {showModal && <Modal message={videoUrl} onClose={closeModal} />}

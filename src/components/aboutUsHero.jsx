@@ -10,7 +10,6 @@ const importAll = (context) => context.keys().map(context);
 const logos = importAll(require.context('../assets/logos/', false, /\.(svg)$/));
 
 export function AboutUsHero() {
-
   // Модальное окно
   const [showModal, setShowModal] = useState(false);
   const [videoUrl, setVideoUrl] = useState('');

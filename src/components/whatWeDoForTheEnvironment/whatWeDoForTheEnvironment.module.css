@@ -1,0 +1,31 @@
+.whatWeDoForTheEnvironment {
+  padding: 96px 0 104px 0;
+  background-color: var(--Green-tertiary, #EFF7F2);
+}
+
+.featureWrap {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 46px 64px;
+}
+
+@media (max-width: 900px) {
+  .featureWrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .whatWeDoForTheEnvironment {
+    padding: 48px 0;
+  }
+
+  .whatWeDoForTheEnvironment h2 {
+    font-size: 36px;
+  }
+
+  .featureWrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

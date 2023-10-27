@@ -1,0 +1,22 @@
+.feature {
+  max-width: 384px;
+
+  display: grid;
+  gap: 8px 24px;
+  grid-template-areas: 'img name' 'empty text';
+}
+
+.name {
+  color: var(--Primary-text, #1D2130);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text {
+  color: var(--Secondary-text, #525560);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+}

@@ -1,9 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import styles from './projects.module.css';
+import { useEffect } from 'react';
+import { WhatWeDoForTheEnvironment } from './whatWeDoForTheEnvironment/whatWeDoForTheEnvironment';
+import { WhatWeDoHero } from './whatWeDoHero';
 
 export function Projects() {
   return (
-    <div className={styles.projects}>
+    <div id='block' className={styles.projects}>
       <div className='container'>
 
         <div className={styles.topRow}>
@@ -49,5 +52,17 @@ export function Projects() {
 
       </div>
     </div>
+  );
+}
+export function WhatWeDo() {
+
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
+  return (
+    <>
+      <WhatWeDoHero />
+      <WhatWeDoForTheEnvironment />
+      <Projects />
+    </>
   );
 }
