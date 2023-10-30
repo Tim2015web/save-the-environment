@@ -126,6 +126,25 @@ button {
   cursor: pointer;
 }
 
+.tablinks {
+  border-radius: 0;
+  background-color: transparent;
+
+  padding: 8px 24px;
+  color: var(--Secondary-text, #525560);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+
+  cursor: pointer;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.tablinks-active {
+  color: var(--Primary-text, #1D2130);
+  border-bottom: 2px solid #70C174;
+}
+
 .container {
   max-width: 1280px;
   padding: 0 20px;

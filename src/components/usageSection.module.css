@@ -1,0 +1,59 @@
+.usageSection {
+  padding: 96px 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.firstWrap {
+  max-width: 374px;
+}
+
+.secondWrap {
+  max-width: 338px;
+}
+
+.thirdWrap {
+  max-width: 374px;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    flex-wrap: wrap;
+    gap: 36px;
+  }
+
+  .firstWrap {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .secondWrap {
+    max-width: 45%;
+  }
+
+  .thirdWrap {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 500px) {
+  .usageSection {
+    padding: 48px 0;
+  }
+
+  .firstWrap h2 {
+    font-size: 36px;
+  }
+
+  .secondWrap {
+    max-width: 100%;
+  }
+
+  .thirdWrap {
+    max-width: 100%;
+  }
+}

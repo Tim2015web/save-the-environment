@@ -36,7 +36,7 @@ export function Header() {
     case '/contact':
       backgroundColor = '#EBF0F9';
       break;
-    case '/Donation':
+    case '/donation':
       backgroundColor = '#EFF7F2';
       break;
     default:

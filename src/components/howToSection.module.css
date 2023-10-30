@@ -1,0 +1,42 @@
+.howToSection {
+  padding: 96px 0;
+}
+
+.wrapper {
+  display: grid;
+  justify-content: space-between;
+
+  grid-template-columns: repeat(2, 1fr);
+  gap: 96px;
+}
+
+.textWrap {}
+
+.textWrap p {
+  margin-top: 24px;
+}
+
+.tabWrap {}
+
+.tab {}
+
+.tabcontent {
+  margin-top: 24px;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 48px;
+  }
+}
+
+@media (max-width: 500px) {
+  .howToSection {
+    padding: 48px 0;
+  }
+
+  .textWrap h2 {
+    font-size: 36px;
+  }
+}
