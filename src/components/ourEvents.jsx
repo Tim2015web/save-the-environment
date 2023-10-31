@@ -14,7 +14,7 @@ export function OurEvents() {
 
         <div className={styles.main}>
 
-          <NavLink to="/event/1" className={styles.card}>
+          <NavLink to="/event-page/september-23" className={styles.card}>
             <div className={styles.dateWrap}>
               <p>23</p>
               <p>SEP</p>
@@ -36,7 +36,7 @@ export function OurEvents() {
             </div>
           </NavLink>
 
-          <NavLink to="/event/2" className={styles.card}>
+          <NavLink to="/event-page/september-25" className={styles.card}>
             <div className={styles.dateWrap}>
               <p>25</p>
               <p>SEP</p>

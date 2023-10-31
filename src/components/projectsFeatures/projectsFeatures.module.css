@@ -1,0 +1,24 @@
+.projectsFeatures {
+  padding: 96px 0;
+  background-color: var(--Off-white, #EBF0F9);
+}
+
+.wrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1024px;
+  gap: 48px;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .projectsFeatures {
+    padding: 48px 0;
+  }
+}

@@ -58,17 +58,17 @@ export function Footer() {
             <ul>
               <li>Our team</li>
               <li><NavLink to="/about-us">About us</NavLink></li>
-              <li><a href="/">Team</a></li>
+              <li><NavLink to="/about-us">Team</NavLink></li>
               <li><NavLink to="/what-we-do">What we do</NavLink></li>
               <li><NavLink to="/contact">Contact</NavLink></li>
             </ul>
 
             <ul>
               <li>More</li>
-              <li><a href="/">Projects</a></li>
-              <li><a href="/">Events</a></li>
-              <li><a href="/">Donate</a></li>
-              <li><a href="/">Blog</a></li>
+              <li><a href="/project-page">Projects</a></li>
+              <li><a href="/event-page">Events</a></li>
+              <li><NavLink to="/donation">Donate</NavLink></li>
+              <li><a href="/blog-page">Blog</a></li>
             </ul>
 
             <ul>

@@ -1,0 +1,12 @@
+.projectsFeaturesCard {
+  display: grid;
+  gap: 8px 20px;
+  grid-template-areas: 'img name' 'empty text';
+}
+
+.name {
+  color: var(--Primary-text, #1D2130);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.6;
+}

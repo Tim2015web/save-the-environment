@@ -1,0 +1,47 @@
+.eventPageHero {
+  padding: 96px 0;
+  background-color: var(--Green-tertiary, #EFF7F2);
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.contactWrap {
+  display: flex;
+  gap: 48px;
+}
+
+.contactWrap>div {
+  display: flex;
+  gap: 8px;
+}
+
+.wrapper img {
+  height: 24px;
+}
+
+.wrapper span {
+  color: var(--Primary-text, #1D2130);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+@media (max-width: 500px) {
+  .eventPageHero {
+    padding: 48px 0;
+  }
+
+  .wrapper h1 {
+    font-size: 48px;
+  }
+
+  .contactWrap {
+    flex-direction: column;
+  }
+}

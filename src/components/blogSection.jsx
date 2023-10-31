@@ -19,7 +19,7 @@ export function BlogSection() {
 
           <div className={styles.card}>
             <img src={images[0]} alt='People at the field' />
-            <NavLink to="/blog-post">
+            <NavLink to="/blog-page/first-page">
               Don't destroy greenery and don't spoil scenery
             </NavLink>
             <p>
@@ -29,7 +29,7 @@ export function BlogSection() {
 
           <div className={styles.card}>
             <img src={images[1]} alt='Forest' />
-            <NavLink to="/blog-post">
+            <NavLink to="/blog-page/second-page">
               Is climate change happening faster than expected?
             </NavLink>
             <p>
@@ -39,7 +39,7 @@ export function BlogSection() {
 
           <div className={styles.card}>
             <img src={images[2]} alt='Field' />
-            <NavLink to="/blog-post">
+            <NavLink to="/blog-page/third-page">
               Top 10 facts about wind farms you didn't know
             </NavLink>
             <p>
@@ -49,7 +49,7 @@ export function BlogSection() {
 
           <div className={styles.card}>
             <img src={images[3]} alt='Can of water' />
-            <NavLink to="/blog-post">
+            <NavLink to="/blog-page/fourth-page">
               Our goal is to make water available for everyone
             </NavLink>
             <p>

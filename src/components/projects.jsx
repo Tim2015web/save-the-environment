@@ -29,7 +29,7 @@ export function Projects() {
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
             </p>
-            <NavLink to="/project">See more</NavLink>
+            <NavLink to="/project-page/first-page">See more</NavLink>
           </div>
 
           <div className={styles.card}>
@@ -37,7 +37,7 @@ export function Projects() {
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
             </p>
-            <NavLink to="/project">See more</NavLink>
+            <NavLink to="/project-page/second-page">See more</NavLink>
           </div>
 
           <div className={styles.card}>
@@ -45,7 +45,7 @@ export function Projects() {
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
             </p>
-            <NavLink to="/project">See more</NavLink>
+            <NavLink to="/project-page/third-page">See more</NavLink>
           </div>
 
         </div>
