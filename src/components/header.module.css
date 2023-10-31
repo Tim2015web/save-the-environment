@@ -92,6 +92,10 @@
     left: 0;
   }
 
+  .navWrapperActive>ul {
+    flex-direction: column;
+  }
+
   .menu {
     @media (max-width: 800px) {
       flex-direction: column;
