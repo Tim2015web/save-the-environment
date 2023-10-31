@@ -24,7 +24,13 @@ export function ProjectPage() {
       currentComponent = <ProjectsThirdPage />;
       break;
     default:
-      currentComponent = <ProjectsSecondPage />;
+      currentComponent = (
+        <div>
+          <ProjectsFirstPage />
+          <ProjectsSecondPage />
+          <ProjectsThirdPage />
+        </div>
+      );
   }
 
   return (

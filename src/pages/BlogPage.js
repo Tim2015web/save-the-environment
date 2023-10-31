@@ -4,6 +4,8 @@ import { BlogsSecondPage } from "../articles/blogs/blogsSecondPage";
 import { BlogsThirdPage } from "../articles/blogs/blogsThirdPage";
 import { BlogsFourthPage } from "../articles/blogs/blogsFourthPage";
 import { useLocation } from "react-router-dom";
+import { BlogsFifthPage } from "../articles/blogs/blogsFifthPage";
+import { BlogsSixthPage } from "../articles/blogs/blogsSixthPage";
 
 export function BlogPage() {
 
@@ -24,8 +26,23 @@ export function BlogPage() {
     case '/blog-page/fourth-page':
       currentComponent = <BlogsFourthPage />;
       break;
+    case '/blog-page/fifth-page':
+      currentComponent = <BlogsFifthPage />;
+      break;
+    case '/blog-page/sixth-page':
+      currentComponent = <BlogsSixthPage />;
+      break;
     default:
-      currentComponent = <BlogsFirstPage />;
+      currentComponent = (
+        <div>
+          <BlogsFirstPage />
+          <BlogsSecondPage />
+          <BlogsThirdPage />
+          <BlogsFourthPage />
+          <BlogsFifthPage />
+          <BlogsSixthPage />
+        </div>
+      );
   }
 
   return (

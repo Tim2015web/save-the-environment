@@ -16,7 +16,7 @@ export function AboutUs() {
       <AboutUsHero />
       <AwardsSection />
       <OurJourneySection />
-      <OurTeamSection />
+      <OurTeamSection id="our-team" />
       <Cta />
       <BlogSection />
       <OurEvents />

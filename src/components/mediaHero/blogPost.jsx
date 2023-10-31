@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styles from './blogPost.module.css';
 
 export function BlogPost(props) {
@@ -7,7 +8,7 @@ export function BlogPost(props) {
         <img src={props.image} alt='Blog post thum' />
       </div>
       <div>
-        <span>{props.name}</span>
+        <NavLink className={styles.name} to={props.link}>{props.name}</NavLink>
         <p>{props.text}</p>
       </div>
     </div>

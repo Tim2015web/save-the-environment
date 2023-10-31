@@ -22,8 +22,13 @@ export function EventPage() {
       currentName = 'Weekly cleaning program';
       break;
     default:
-      currentComponent = <Sep23 />;
-      currentName = 'Say no to plastic usage and save the planet';
+      currentComponent = (
+        <div>
+          <Sep23 />
+          <Sep25 />
+        </div>
+      );
+      currentName = 'Our Events';
       break;
   }
 

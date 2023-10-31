@@ -30,9 +30,9 @@ export function MediaHero() {
           </div>
 
           <div className={styles.contentWrap}>
-            <BlogPost image={images[0]} name='Don’t destroy greenery and don’t spoil scenery.' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim' />
-            <BlogPost image={images[1]} name='Why saving wildlife is extremely important' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim' />
-            <BlogPost image={images[2]} name='Caring for the present is caring for the future' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim' />
+            <BlogPost image={images[0]} name='Don’t destroy greenery and don’t spoil scenery.' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim' link='/blog-page/first-page' />
+            <BlogPost image={images[1]} name='Why saving wildlife is extremely important' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim' link='/blog-page/fifth-page' />
+            <BlogPost image={images[2]} name='Caring for the present is caring for the future' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim' link='/blog-page/sixth-page' />
           </div>
 
         </div>

@@ -17,12 +17,18 @@
   display: block;
 }
 
-.blogPost span {
+.name {
   display: block;
   color: var(--Primary-text, #1D2130);
   font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
+  text-decoration: none;
+}
+
+.name:hover {
+  color: var(--Green-primary, #70C174);
+  text-decoration: underline;
 }
 
 @media (max-width: 500px) {

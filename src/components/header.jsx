@@ -39,6 +39,9 @@ export function Header() {
     case '/donation':
       backgroundColor = '#EFF7F2';
       break;
+    case '/event-page':
+      backgroundColor = '#EFF7F2';
+      break;
     case '/event-page/september-23':
       backgroundColor = '#EFF7F2';
       break;
