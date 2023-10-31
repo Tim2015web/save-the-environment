@@ -6,7 +6,7 @@ const images = importAll(require.context('../../assets/ourTeamSection', false, /
 
 export function OurTeamSection() {
   return (
-    <div className={styles.ourTeamSection}>
+    <div className={styles.ourTeamSection} >
       <div className='container'>
 
         <div className={styles.textWrap}>
