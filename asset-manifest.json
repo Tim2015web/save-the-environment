@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/save-the-environment/static/css/main.8eb8ca90.css",
-    "main.js": "/save-the-environment/static/js/main.3a06d327.js",
+    "main.js": "/save-the-environment/static/js/main.4e4abefa.js",
     "static/media/award3.svg": "/save-the-environment/static/media/award3.6c786d9ce891de565f53.svg",
     "static/media/Roboto-Medium.woff": "/save-the-environment/static/media/Roboto-Medium.61c265591865cecb1c3d.woff",
     "static/media/Roboto-Bold.woff": "/save-the-environment/static/media/Roboto-Bold.75a1a5b5582b236e0fe3.woff",
@@ -71,10 +71,10 @@
     "index.html": "/save-the-environment/index.html",
     "static/media/eventPage_Icon2.svg": "/save-the-environment/static/media/eventPage_Icon2.86822dfc695d0b7dc90d000fef8b6ae7.svg",
     "main.8eb8ca90.css.map": "/save-the-environment/static/css/main.8eb8ca90.css.map",
-    "main.3a06d327.js.map": "/save-the-environment/static/js/main.3a06d327.js.map"
+    "main.4e4abefa.js.map": "/save-the-environment/static/js/main.4e4abefa.js.map"
   },
   "entrypoints": [
     "static/css/main.8eb8ca90.css",
-    "static/js/main.3a06d327.js"
+    "static/js/main.4e4abefa.js"
   ]
 }
