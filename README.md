@@ -1,6 +1,6 @@
 # Study project on React - Save the environment
 
-[Show the project](https://tim2015web.github.io/save-the-environment/)
+[Show the project](https://tim2015web.github.io/)
 
 <p>
 <img alt="React" src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white">
