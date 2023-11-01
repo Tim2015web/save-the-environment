@@ -11,9 +11,8 @@
 <img alt="Pixel Perfect" src="https://img.shields.io/badge/-Pixel Perfect-E4405F?style=flat-square&logo=dask&logoColor=white">
 </p>
 
----
-
 [Show the project](https://tim2015web.github.io/save-the-environment/)
+
 [Original project Figma](https://www.figma.com/file/kCkyiL16H2gaGJkef1teV6/Client-First-Template-7-(Community)?type=design&node-id=47-116&mode=design&t=SnV6IYsKEyEZsnGZ-0)
 
 ---
